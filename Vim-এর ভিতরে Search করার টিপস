@@ -1,0 +1,115 @@
+
+🎯 মুখস্থ রাখার টেবিল
+কাজ	Vim Command
+সামনে Search	/word
+পিছনে Search	?word
+পরের Match	n
+আগের Match	N
+নির্দিষ্ট Line-এ যাও	:53
+Highlight বন্ধ	:noh
+
+
+১. সামনে (Forward) Search
+
+Syntax:
+
+/শব্দ
+
+উদাহরণ:
+
+/PasswordAuthentication
+
+তারপর Enter চাপো।
+
+👉 Cursor সরাসরি PasswordAuthentication লেখার কাছে চলে যাবে।
+
+২. পিছনের দিকে (Backward) Search
+
+Syntax:
+
+?শব্দ
+
+উদাহরণ:
+
+?PermitRootLogin
+৩. পরবর্তী Match-এ যাও
+
+Search করার পরে:
+
+n
+
+মানে Next।
+
+উদাহরণ:
+
+/PasswordAuthentication
+
+Enter
+
+তারপর
+
+n
+
+পরবর্তী PasswordAuthentication-এ যাবে।
+
+৪. আগের Match-এ যাও
+N
+
+(বড় হাতের N)
+
+এটি আগের Match-এ নিয়ে যাবে।
+
+৫. Line Number-এ যাও
+
+যদি Error বলে:
+
+line 53
+
+তাহলে Vim-এ লিখবে:
+
+:53
+
+Enter চাপলেই Line 53-এ চলে যাবে।
+
+এটা RHCSA/RHCE Exam-এ খুব বেশি ব্যবহার হয়।
+
+৬. Search Highlight বন্ধ করা
+
+Search করলে Highlight থেকে যায়।
+
+বন্ধ করতে:
+
+:noh
+
+অথবা
+
+:nohlsearch
+RHCSA Exam Example
+
+ধরো sshd -t বলল:
+
+line 53
+
+তুমি করবে:
+
+vi /etc/ssh/sshd_config
+
+তারপর:
+
+:53
+
+সরাসরি Line 53-এ যাবে।
+
+আবার যদি PasswordAuthentication খুঁজতে চাও:
+
+/PasswordAuthentication
+
+Enter
+
+পরবর্তী Match:
+
+n
+
+আগের Match:
+
+N
