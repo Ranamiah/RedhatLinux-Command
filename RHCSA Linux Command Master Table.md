@@ -58,3 +58,46 @@ RHCSA Linux Command Master Table
 | `crontab`           | Cron Table                      | Scheduled Job                   | `-e`, `-l`, `-r`                                                                        | Automation               | `crontab -e`                                  | Cron Syntax ভুল               | **Cron = Clock Robot**                      |
 | `useradd`           | User Add                        | User তৈরি                       | `-m`, `-s`, `-G`, `-u`                                                                  | নতুন User                | `useradd -m rana`                             | Password Set না করা           | **User Add**                                |
 | `passwd`            | Password                        | Password Set                    | `-l`, `-u`, `-d`                                                                        | User Password            | `passwd rana`                                 | Root ছাড়া Password Change     | **Pass + Word**                             |
+
+RHCSA Exam-এ সবচেয়ে বেশি আসা Commands
+
+| Command        | Purpose             |
+| -------------- | ------------------- |
+| `find`         | File খোঁজা          |
+| `grep`         | Text Search         |
+| `sshd -t`      | SSH Config Test     |
+| `journalctl`   | Log দেখা            |
+| `systemctl`    | Service Manage      |
+| `nmcli`        | Network Configure   |
+| `hostnamectl`  | Hostname            |
+| `timedatectl`  | Time/NTP            |
+| `tar`          | Backup              |
+| `chmod`        | Permission          |
+| `chown`        | Ownership           |
+| `umask`        | Default Permission  |
+| `firewall-cmd` | Firewall            |
+| `getenforce`   | SELinux Status      |
+| `setenforce`   | SELinux Mode        |
+| `restorecon`   | SELinux Context Fix |
+| `podman`       | Container           |
+| `crontab`      | Cron Job            |
+| `useradd`      | User Create         |
+| `passwd`       | Password Set        |
+
+মনে রাখার সুপার ট্রিক (Memory Map)
+| Category      | Commands                                                 |
+| ------------- | -------------------------------------------------------- |
+| 🔍 Search     | `find`, `grep`                                           |
+| 📄 File View  | `cat`, `less`, `head`, `tail`, `tail -f`, `nl`, `sed`    |
+| ✏️ Edit       | `vi`                                                     |
+| 👤 User       | `useradd`, `passwd`, `chown`                             |
+| 🔐 Permission | `chmod`, `umask`                                         |
+| ⚙️ Service    | `systemctl`, `journalctl`, `sshd -t`                     |
+| 🌐 Network    | `nmcli`, `hostnamectl`, `timedatectl`                    |
+| 🛡️ Security  | `firewall-cmd`, `getenforce`, `setenforce`, `restorecon` |
+| 💾 Backup     | `tar`                                                    |
+| 📦 Container  | `podman`                                                 |
+| ⏰ Automation  | `crontab`                                                |
+
+
+
